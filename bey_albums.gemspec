@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tammarra McPhaul"]
   spec.email         = ["shaemc22@gmail.com"]
 
-  spec.summary       = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description   = "TODO: Write a longer description or delete this line."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "List of Beyonce's albums with purchase link"
+  spec.description   = "List of Beyonce's albums with purchase link"
+  spec.homepage      = "https://github.com/tsmcphaul/bey_albums.git"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 

@@ -1,8 +1,8 @@
 # BeyAlbums
 
-Welcome to the wonderful world of Beyonce! Aren't you glad you found this?!?  In this repository, you'll be able to access a list of Beyonce's albums and some details about them.  If you like what you see, you'll have access to an Itunes link to purchase the album of your choice!
+Welcome to the wonderful world of Beyonce! Aren't you glad you found this?!?  In this repository, you'll be able to access a list of Beyonce's albums on iTunes and some details about them.  If you like what you see, you'll have access to an Itunes link to purchase the album of your choice!
 
-
+API - iTunes Search - https://itunes.apple.com/search?term=beyonce&entity=album
 
 ## Installation
 

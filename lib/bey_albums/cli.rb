@@ -34,8 +34,9 @@ class CLI
     end
 
     def album_list
-        #list of albums
+        puts "-----------------------------------------"
         Album.album_list
+        puts "-----------------------------------------"
         options
     end
 
@@ -51,12 +52,16 @@ class CLI
         @selection = Album.find_by_number(input)
         puts " "
         puts " "
+        puts "-----------------------------------------"
+        puts "-----------------------------------------"
         puts "Artist: #{@selection.artistName}"
         puts "Album Name: #{@selection.collectionName}"
         puts "Release Date: #{@selection.releaseDate}"
         puts "Track Count: #{@selection.trackCount}"
         puts "Genre: #{@selection.primaryGenreName}"
         puts "Price: $#{@selection.collectionPrice} USD"
+        puts "-----------------------------------------"
+        puts "-----------------------------------------"
         puts " "
         puts "Are you interested in buying this album?"
         
@@ -65,12 +70,14 @@ class CLI
         input = gets.strip.downcase
         if input == "yes" || input == "y"
             puts " "
-            puts "Here is the Itunes link to purchase!"
-            puts "Itunes link - #{@selection.collectionViewUrl}"
-            puts "-----------------------------------------"
+            puts "Here is the iTunes link to purchase!"
+            puts "iTunes link - #{@selection.collectionViewUrl}"
+            puts " "
+            puts "-------------------------------------------------"
             continue
         elsif input == "no" || input == "n"
             puts "That's OK!" 
+            puts "-------------------------------------------------"
             continue
         else
             puts "Whoops! Something went wrong."
@@ -85,6 +92,7 @@ class CLI
             album_list
             purchase
         elsif input == "no" || input == "n"
+            puts " "
             puts "Thanks for checking this out!"
             exit
         else
