@@ -1,16 +1,15 @@
 # BeyAlbums
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bey_albums`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to the wonderful world of Beyonce! Aren't you glad you found this?!?  In this repository, you'll be able to access a list of Beyonce's albums and some details about them.  If you like what you see, you'll have access to an Itunes link to purchase the album of your choice!
 
-TODO: Delete this and the text above, and describe your gem
+
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'bey_albums'
-```
+gem "bey_albums", :git => "https://github.com/tsmcphaul/bey_albums.git"
+
 
 And then execute:
 
@@ -22,7 +21,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To run this program, type:
+
+    ruby bin/bey_albums
+
+Once the program is running, you will follow the prompts to select which album you'd like to explore.
+
 
 ## Development
 
