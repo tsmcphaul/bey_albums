@@ -64,6 +64,7 @@ class CLI
         puts "-----------------------------------------"
         puts " "
         puts "Would you like to buy this album? Enter yes or no and press 'Enter' to continue."
+    end
     
 
     def purchase
@@ -106,6 +107,4 @@ class CLI
             continue
         end
     end
-
-end
 end
