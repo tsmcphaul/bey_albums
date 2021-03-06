@@ -1,33 +1,33 @@
 class CLI
 
-
     def call
       API.get_albums  
       welcome
       enter_app
-      purchase
-      
+      purchase 
     end
 
     def welcome
         puts " "
-        puts "Crazy in Love with Queen Bey? Want to check out a list of her albums available on iTunes?"
+        puts "Crazy in Love with Queen Bey? Let's buy some music!"
         puts " "
-        puts "Please enter yes or no"
+        puts "Please enter yes or no and press 'Enter' to continue."
     end
      
     def enter_app
         input = gets.strip.downcase
         if input == "yes" || input == "y"
             puts " "
-            puts "Great answer! Here are Beyonce's albums:"
+            puts "Great answer! Here are Beyonce's albums available for purchase:"
             puts "-----------------------------------------"
             album_list
             
         elsif input == "no" || input == "n"
+            puts " "
             puts "Aww, maybe next time!"
             exit
         else
+            puts " "
             puts "Whoops! Something went wrong."
             call
         end
@@ -43,7 +43,7 @@ class CLI
     def options
         puts " "
         puts " "
-        puts "Which album are you interested in? Enter the number that corresponds with your choice:"
+        puts "Which album are you interested in buying? Enter the number that corresponds with your choice and press 'Enter' to continue.:"
         input = gets.strip.to_i
             if input < 1 || input > 50
                 puts "That's not on the list!"
@@ -63,40 +63,46 @@ class CLI
         puts "-----------------------------------------"
         puts "-----------------------------------------"
         puts " "
-        puts "Are you interested in buying this album?"
-        
+        puts "Would you like to buy this album? Enter yes or no and press 'Enter' to continue."
+    
 
     def purchase
         input = gets.strip.downcase
         if input == "yes" || input == "y"
             puts " "
-            puts "Here is the iTunes link to purchase!"
+            puts "Here is the iTunes link to purchase! Aren't you excited?"
+            puts " "
             puts "iTunes link - #{@selection.collectionViewUrl}"
             puts " "
-            puts "-------------------------------------------------"
+            puts "Copy and paste the link into your browser.  From there, you can proceed with purchasing your selection."
+            puts "---------------------------------------------------------------------------------------------------------------"
             continue
         elsif input == "no" || input == "n"
+            puts " "
             puts "That's OK!" 
             puts "-------------------------------------------------"
             continue
         else
+            puts " "
             puts "Whoops! Something went wrong."
             purchase
         end
     end
 
     def continue
-        puts "Would you like to view another album? Yes or no?"
+        puts " "
+        puts "Would you like to view another album for purchase? Enter yes or no and press 'Enter' to continue."
         input = gets.strip.downcase
         if input == "yes" || input == "y"
             album_list
             purchase
         elsif input == "no" || input == "n"
             puts " "
-            puts "Thanks for checking this out!"
+            puts "Thanks for checking this out! Come back and buy something! :)"
             exit
         else
-            puts "I didn't understand your answer"
+            puts " "
+            puts "Whoops! Something went wrong."
             continue
         end
     end

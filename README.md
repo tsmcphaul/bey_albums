@@ -1,29 +1,22 @@
 # BeyAlbums
 
-Welcome to the wonderful world of Beyonce! Aren't you glad you found this?!?  In this repository, you'll be able to access a list of Beyonce's albums on iTunes and some details about them.  If you like what you see, you'll have access to an Itunes link to purchase the album of your choice!
+Welcome to the wonderful world of Beyonce! Aren't you glad you found this?!?  In this repository, you'll be able to access a list of Beyonce's music catalog on iTunes that is available for purchase.  You'll be able to explore additional details about your selection before purchasing.  If you like what you see, you'll have access to an iTunes link to purchase your selection!  You'll be directed back to the list if you'd like to explore more!
 
 API - iTunes Search - https://itunes.apple.com/search?term=beyonce&entity=album
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Go to "https://github.com/tsmcphaul/bey_albums" in your browser.  Click on the green 'Code' button to clone the repository.  Under the HTTPS tab, copy the link.
 
-gem "bey_albums", :git => "https://github.com/tsmcphaul/bey_albums.git"
+Add this line to your terminal:
 
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install bey_albums
+git clone "https://github.com/tsmcphaul/bey_albums.git"
 
 ## Usage
 
 To run this program, type:
 
-    ruby bin/bey_albums
+     bin/bey_albums
 
 Once the program is running, you will follow the prompts to select which album you'd like to explore.
 
@@ -36,7 +29,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/bey_albums. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/bey_albums/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/[tsmcphaul]/bey_albums. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/bey_albums/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 

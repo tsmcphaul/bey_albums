@@ -15,8 +15,6 @@ class API
                 obj['collectionViewUrl']
             )
         end
-        
-       
     end
 end
 

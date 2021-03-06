@@ -1,4 +1,3 @@
-require 'pry'
 class Album
 
 attr_accessor :artistName, :collectionName, :collectionPrice, :releaseDate, :trackCount, :primaryGenreName, :collectionViewUrl  
@@ -12,13 +11,11 @@ def initialize(name, album, cost, date, num_tracks, category, link)
     @trackCount = num_tracks
     @primaryGenreName = category
     @collectionViewUrl = link
-    @@all << self
-  
+    @@all << self 
 end
 
 def self.all
     @@all
-
 end
 
 def self.album_list
@@ -27,12 +24,9 @@ def self.album_list
     end
 end
 
-
-
 def self.find_by_number(input)
     index = input - 1
     self.all.at(index)
 end
-
 
 end
